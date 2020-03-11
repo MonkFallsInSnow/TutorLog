@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TutorLog.Data.Models
 {
-    class Course
+    public class Course
     {
         public int ID { get; set; }
         public string Name { get; set; }
