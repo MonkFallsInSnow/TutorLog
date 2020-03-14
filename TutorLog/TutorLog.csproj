@@ -69,6 +69,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTopicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTopicForm.Designer.cs">
+      <DependentUpon>AddTopicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTutorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTutorForm.Designer.cs">
+      <DependentUpon>AddTutorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Constants.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\Models\Campus.cs" />
@@ -101,6 +113,12 @@
     <Compile Include="TutorLogForm.Designer.cs">
       <DependentUpon>TutorLogForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddTopicForm.resx">
+      <DependentUpon>AddTopicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTutorForm.resx">
+      <DependentUpon>AddTutorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

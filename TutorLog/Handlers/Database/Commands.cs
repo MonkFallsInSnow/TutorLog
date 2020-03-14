@@ -349,5 +349,56 @@ namespace TutorLog.Handlers.Database
         }
     }
 
+    //TODO: finish tutor insert
+    class InsertTutorCommand : BaseDatabaseCommand<bool>
+    {
+        private Tutor tutor;
+
+        public InsertTutorCommand(SQLiteConnection connection, Tutor tutor) : base(connection)
+        {
+            this.tutor = tutor;
+        }
+
+        public override bool Execute()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    //TODO: finish topic insert
+    class InsertTopicCommand : BaseDatabaseCommand<bool>
+    {
+        private Topic topic;
+        private IList<Campus> campuses;
+
+        public InsertTopicCommand(SQLiteConnection connection, Topic topic, IList<Campus> campuses) : base(connection)
+        {
+            this.topic = topic;
+            this.campuses = campuses;
+        }
+
+        public override bool Execute()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    //TODO: add save data table to database
+    //TODO: finish save progress command
+    class SaveProgressCommand : BaseDatabaseCommand<bool>
+    {
+        private SignInData data;
+
+        public SaveProgressCommand(SQLiteConnection connection, SignInData data) : base(connection)
+        {
+            this.data = data;
+        }
+
+        public override bool Execute()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     #endregion
 }

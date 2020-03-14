@@ -225,6 +225,7 @@
             // 
             this.tutorComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.tutorComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.tutorComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tutorComboBox.FormattingEnabled = true;
             this.tutorComboBox.Location = new System.Drawing.Point(6, 41);
             this.tutorComboBox.Name = "tutorComboBox";
@@ -273,6 +274,7 @@
             this.Controls.Add(this.logTabs);
             this.Name = "TutorLogForm";
             this.Text = "Tutoring Log";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TutorLogForm_FormClosing);
             this.logTabs.ResumeLayout(false);
             this.logDataTabPage.ResumeLayout(false);
             this.logDataTabPage.PerformLayout();

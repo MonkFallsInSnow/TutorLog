@@ -44,7 +44,7 @@ namespace TutorLog
                 else if(result == DialogResult.OK)
                 {
                     loginForm.Close();
-                    TutorLogForm tutorLogForm = new TutorLogForm(dataHandler, loginForm.SessionCookie, loginForm.SessionCampus);
+                    TutorLogForm tutorLogForm = new TutorLogForm(dataHandler, errorHandler, loginForm.SessionCookie, loginForm.SessionCampus);
                     Application.Run(tutorLogForm);
                          
                 }
